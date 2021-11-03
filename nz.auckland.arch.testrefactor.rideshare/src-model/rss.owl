@@ -292,7 +292,7 @@
         <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#requester_2947"/>
+        <NamedIndividual IRI="#reader_8449"/>
     </Declaration>
     <Declaration>
         <Class IRI="#listen"/>
@@ -304,6 +304,9 @@
         <Class IRI="#read"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#eventsubscriber_7363"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#WRConnector"/>
     </Declaration>
     <Declaration>
@@ -313,16 +316,16 @@
         <NamedIndividual IRI="#SignOn"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#requester_6180"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#request"/>
     </Declaration>
     <Declaration>
         <Class IRI="#blocksupplier"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#readstorage_6636"/>
+        <NamedIndividual IRI="#logdriver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#eventpublisher_6397"/>
     </Declaration>
     <Declaration>
         <Class IRI="#writestorage"/>
@@ -331,7 +334,13 @@
         <Class IRI="#write"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#DriverupdatewireCommandLog"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#bcstore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#requester_1273"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TamperingProofPort"/>
@@ -340,13 +349,16 @@
         <Class IRI="#readstorage"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#writer_6362"/>
+        <NamedIndividual IRI="#logassign"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#notify"/>
     </Declaration>
     <Declaration>
         <Class IRI="#null"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AssignwireLog"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#dlogin"/>
@@ -358,7 +370,13 @@
         <Class IRI="#subscriber"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#eventstore_8671"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#eventlogger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#readstorage_9566"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ESConnector"/>
@@ -376,10 +394,13 @@
         <Class IRI="#repository"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#responder_9164"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#datastore"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#reader_4579"/>
+        <NamedIndividual IRI="#responder_9040"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TripMgmt"/>
@@ -395,6 +416,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#blockstorage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#readstore_5413"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RuleSecureWriting"/>
@@ -415,6 +439,9 @@
         <Class IRI="#RuleEventQuery"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#writestorage_0211"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#log"/>
     </Declaration>
     <Declaration>
@@ -428,9 +455,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#server"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#writestorage_3619"/>
     </Declaration>
     <Declaration>
         <Class IRI="#eventsubscriber"/>
@@ -454,19 +478,22 @@
         <Class IRI="#viewdb"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#readstorage_1966"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#requester_7966"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#extsupplier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#reader_6428"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#UserDB"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#reader_4369"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#callwire"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#responder_2282"/>
     </Declaration>
     <Declaration>
         <Class IRI="#QRConnector"/>
@@ -479,6 +506,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#reader"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#commander_3221"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PassengerUI"/>
@@ -496,12 +526,6 @@
         <NamedIndividual IRI="#call"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#payprocesswire"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#readstorage_6121"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#listener"/>
     </Declaration>
     <Declaration>
@@ -511,28 +535,19 @@
         <Class IRI="#querier"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#writer_2627"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#record"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CRConnector"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#subscriber_5909"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#writestorage_7435"/>
+        <NamedIndividual IRI="#billwire"/>
     </Declaration>
     <Declaration>
         <Class IRI="#eventsource"/>
     </Declaration>
     <Declaration>
         <Class IRI="#logcommand"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#reader_3853"/>
     </Declaration>
     <Declaration>
         <Class IRI="#requester"/>
@@ -559,7 +574,13 @@
         <NamedIndividual IRI="#driverupdatewire"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#commandstore_1359"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#writer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#writer_3529"/>
     </Declaration>
     <Declaration>
         <Class IRI="#IOConnector"/>
@@ -577,9 +598,6 @@
         <NamedIndividual IRI="#driverquerywire"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#publisher_9677"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#RuleEventCommand"/>
     </Declaration>
     <Declaration>
@@ -590,9 +608,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#CSConnector"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#readstorage_3400"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RuleSecureReading"/>
@@ -613,6 +628,9 @@
         <Class IRI="#blockquery"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#readstore_1341"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#eventstore"/>
     </Declaration>
     <Declaration>
@@ -628,13 +646,13 @@
         <Class IRI="#broadcast"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#responder_3798"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#find"/>
     </Declaration>
     <Declaration>
         <Class IRI="#commandstore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#querier_8196"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#userquerywire"/>
@@ -1400,7 +1418,7 @@
         <Class IRI="#issue"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasAttachment"/>
-            <Class IRI="#commander"/>
+            <Class IRI="#readstore"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -1554,7 +1572,7 @@
         <Class IRI="#update"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasAttachment"/>
-            <Class IRI="#readstore"/>
+            <Class IRI="#commander"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -2682,12 +2700,32 @@
         <NamedIndividual IRI="#accept"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#commander"/>
+        <NamedIndividual IRI="#commander_3221"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#commandstore"/>
+        <NamedIndividual IRI="#commandstore_1359"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#EventProcessorPort"/>
         <NamedIndividual IRI="#driverquery"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#EventProcessorPort"/>
         <NamedIndividual IRI="#driverupdate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#eventpublisher"/>
+        <NamedIndividual IRI="#eventpublisher_6397"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#eventstore"/>
+        <NamedIndividual IRI="#eventstore_8671"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#eventsubscriber"/>
+        <NamedIndividual IRI="#eventsubscriber_7363"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#TamperingProofPort"/>
@@ -2702,32 +2740,32 @@
         <NamedIndividual IRI="#notify"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#publisher"/>
-        <NamedIndividual IRI="#publisher_9677"/>
+        <Class IRI="#querier"/>
+        <NamedIndividual IRI="#querier_8196"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#reader"/>
-        <NamedIndividual IRI="#reader_3853"/>
+        <NamedIndividual IRI="#reader_6428"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#reader"/>
-        <NamedIndividual IRI="#reader_4369"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#reader"/>
-        <NamedIndividual IRI="#reader_4579"/>
+        <NamedIndividual IRI="#reader_8449"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#readstorage"/>
-        <NamedIndividual IRI="#readstorage_3400"/>
+        <NamedIndividual IRI="#readstorage_1966"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#readstorage"/>
-        <NamedIndividual IRI="#readstorage_6121"/>
+        <NamedIndividual IRI="#readstorage_9566"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#readstorage"/>
-        <NamedIndividual IRI="#readstorage_6636"/>
+        <Class IRI="#readstore"/>
+        <NamedIndividual IRI="#readstore_1341"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#readstore"/>
+        <NamedIndividual IRI="#readstore_5413"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#TamperingProofPort"/>
@@ -2735,40 +2773,33 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#requester"/>
-        <NamedIndividual IRI="#requester_2947"/>
+        <NamedIndividual IRI="#requester_1273"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#requester"/>
-        <NamedIndividual IRI="#requester_6180"/>
+        <NamedIndividual IRI="#requester_7966"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#responder"/>
-        <NamedIndividual IRI="#responder_2282"/>
+        <NamedIndividual IRI="#responder_9040"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#responder"/>
-        <NamedIndividual IRI="#responder_3798"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#subscriber"/>
-        <NamedIndividual IRI="#subscriber_5909"/>
+        <NamedIndividual IRI="#responder_9164"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#writer"/>
-        <NamedIndividual IRI="#writer_2627"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#writer"/>
-        <NamedIndividual IRI="#writer_6362"/>
+        <NamedIndividual IRI="#writer_3529"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#writestorage"/>
-        <NamedIndividual IRI="#writestorage_3619"/>
+        <NamedIndividual IRI="#writestorage_0211"/>
     </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#writestorage"/>
-        <NamedIndividual IRI="#writestorage_7435"/>
-    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#AssignwireLog"/>
+        <NamedIndividual IRI="#logassign"/>
+    </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
         <NamedIndividual IRI="#BillingGateway"/>
@@ -2798,6 +2829,11 @@
         <ObjectProperty IRI="#hasPort"/>
         <NamedIndividual IRI="#DriverUI"/>
         <NamedIndividual IRI="#notify"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPort"/>
+        <NamedIndividual IRI="#DriverupdatewireCommandLog"/>
+        <NamedIndividual IRI="#logdriver"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPort"/>
@@ -2842,168 +2878,198 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
         <NamedIndividual IRI="#accept"/>
-        <NamedIndividual IRI="#publisher_9677"/>
+        <NamedIndividual IRI="#eventpublisher_6397"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
         <NamedIndividual IRI="#accept"/>
-        <NamedIndividual IRI="#reader_4579"/>
+        <NamedIndividual IRI="#querier_8196"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
         <NamedIndividual IRI="#accept"/>
-        <NamedIndividual IRI="#responder_3798"/>
+        <NamedIndividual IRI="#responder_9040"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
         <NamedIndividual IRI="#assignwire"/>
-        <NamedIndividual IRI="#publisher_9677"/>
+        <NamedIndividual IRI="#eventpublisher_6397"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
         <NamedIndividual IRI="#assignwire"/>
-        <NamedIndividual IRI="#subscriber_5909"/>
+        <NamedIndividual IRI="#eventstore_8671"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#assignwire"/>
+        <NamedIndividual IRI="#eventsubscriber_7363"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
         <NamedIndividual IRI="#auth"/>
-        <NamedIndividual IRI="#reader_4369"/>
+        <NamedIndividual IRI="#reader_6428"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
         <NamedIndividual IRI="#auth"/>
-        <NamedIndividual IRI="#responder_2282"/>
+        <NamedIndividual IRI="#responder_9164"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
         <NamedIndividual IRI="#authwire"/>
-        <NamedIndividual IRI="#requester_2947"/>
+        <NamedIndividual IRI="#requester_1273"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
         <NamedIndividual IRI="#authwire"/>
-        <NamedIndividual IRI="#responder_2282"/>
+        <NamedIndividual IRI="#responder_9164"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#billwire"/>
+        <NamedIndividual IRI="#reader_8449"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#billwire"/>
+        <NamedIndividual IRI="#readstorage_9566"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
         <NamedIndividual IRI="#call"/>
-        <NamedIndividual IRI="#requester_6180"/>
+        <NamedIndividual IRI="#requester_7966"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
         <NamedIndividual IRI="#callwire"/>
-        <NamedIndividual IRI="#requester_6180"/>
+        <NamedIndividual IRI="#requester_7966"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
         <NamedIndividual IRI="#callwire"/>
-        <NamedIndividual IRI="#responder_3798"/>
+        <NamedIndividual IRI="#responder_9040"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
         <NamedIndividual IRI="#dlogin"/>
-        <NamedIndividual IRI="#requester_2947"/>
+        <NamedIndividual IRI="#requester_1273"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
         <NamedIndividual IRI="#driverquery"/>
-        <NamedIndividual IRI="#readstorage_6636"/>
+        <NamedIndividual IRI="#readstore_1341"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
         <NamedIndividual IRI="#driverquerywire"/>
-        <NamedIndividual IRI="#reader_4579"/>
+        <NamedIndividual IRI="#querier_8196"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
         <NamedIndividual IRI="#driverquerywire"/>
-        <NamedIndividual IRI="#readstorage_6636"/>
+        <NamedIndividual IRI="#readstore_1341"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
         <NamedIndividual IRI="#driverupdate"/>
-        <NamedIndividual IRI="#writestorage_3619"/>
+        <NamedIndividual IRI="#readstore_5413"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
         <NamedIndividual IRI="#driverupdatewire"/>
-        <NamedIndividual IRI="#writer_2627"/>
+        <NamedIndividual IRI="#commander_3221"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
         <NamedIndividual IRI="#driverupdatewire"/>
-        <NamedIndividual IRI="#writestorage_3619"/>
+        <NamedIndividual IRI="#commandstore_1359"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#driverupdatewire"/>
+        <NamedIndividual IRI="#readstore_5413"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
         <NamedIndividual IRI="#find"/>
-        <NamedIndividual IRI="#readstorage_6121"/>
+        <NamedIndividual IRI="#readstorage_1966"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
         <NamedIndividual IRI="#list"/>
-        <NamedIndividual IRI="#readstorage_3400"/>
+        <NamedIndividual IRI="#readstorage_9566"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
         <NamedIndividual IRI="#locate"/>
-        <NamedIndividual IRI="#writer_2627"/>
+        <NamedIndividual IRI="#commander_3221"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#logassign"/>
+        <NamedIndividual IRI="#eventstore_8671"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAttachment"/>
+        <NamedIndividual IRI="#logdriver"/>
+        <NamedIndividual IRI="#commandstore_1359"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
         <NamedIndividual IRI="#notify"/>
-        <NamedIndividual IRI="#subscriber_5909"/>
+        <NamedIndividual IRI="#eventsubscriber_7363"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
         <NamedIndividual IRI="#pay"/>
-        <NamedIndividual IRI="#writer_6362"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#payprocesswire"/>
-        <NamedIndividual IRI="#reader_3853"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasRole"/>
-        <NamedIndividual IRI="#payprocesswire"/>
-        <NamedIndividual IRI="#readstorage_3400"/>
+        <NamedIndividual IRI="#writer_3529"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
         <NamedIndividual IRI="#paywire"/>
-        <NamedIndividual IRI="#writer_6362"/>
+        <NamedIndividual IRI="#writer_3529"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
         <NamedIndividual IRI="#paywire"/>
-        <NamedIndividual IRI="#writestorage_7435"/>
+        <NamedIndividual IRI="#writestorage_0211"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
         <NamedIndividual IRI="#plogin"/>
-        <NamedIndividual IRI="#requester_2947"/>
+        <NamedIndividual IRI="#requester_1273"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
         <NamedIndividual IRI="#process"/>
-        <NamedIndividual IRI="#reader_3853"/>
+        <NamedIndividual IRI="#reader_8449"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAttachment"/>
         <NamedIndividual IRI="#record"/>
-        <NamedIndividual IRI="#writestorage_7435"/>
+        <NamedIndividual IRI="#writestorage_0211"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
         <NamedIndividual IRI="#userquerywire"/>
-        <NamedIndividual IRI="#reader_4369"/>
+        <NamedIndividual IRI="#reader_6428"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRole"/>
         <NamedIndividual IRI="#userquerywire"/>
-        <NamedIndividual IRI="#readstorage_6121"/>
+        <NamedIndividual IRI="#readstorage_1966"/>
     </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCriticalValue"/>
+        <NamedIndividual IRI="#AssignwireLog"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDependencies"/>
+        <NamedIndividual IRI="#AssignwireLog"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCriticalValue"/>
         <NamedIndividual IRI="#BillingGateway"/>
@@ -3012,7 +3078,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDependencies"/>
         <NamedIndividual IRI="#BillingGateway"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCriticalValue"/>
@@ -3022,7 +3088,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDependencies"/>
         <NamedIndividual IRI="#DriverRecord"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCriticalValue"/>
@@ -3032,7 +3098,17 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDependencies"/>
         <NamedIndividual IRI="#DriverUI"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCriticalValue"/>
+        <NamedIndividual IRI="#DriverupdatewireCommandLog"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDependencies"/>
+        <NamedIndividual IRI="#DriverupdatewireCommandLog"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCriticalValue"/>
@@ -3042,7 +3118,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDependencies"/>
         <NamedIndividual IRI="#PassengerUI"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCriticalValue"/>
@@ -3052,7 +3128,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDependencies"/>
         <NamedIndividual IRI="#Payment"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCriticalValue"/>
@@ -3062,7 +3138,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDependencies"/>
         <NamedIndividual IRI="#SignOn"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCriticalValue"/>
@@ -3072,7 +3148,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDependencies"/>
         <NamedIndividual IRI="#TripMgmt"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCriticalValue"/>
@@ -3082,77 +3158,87 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDependencies"/>
         <NamedIndividual IRI="#UserDB"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasLinkages"/>
         <NamedIndividual IRI="#accept"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasLinkages"/>
         <NamedIndividual IRI="#auth"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasLinkages"/>
         <NamedIndividual IRI="#call"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasLinkages"/>
         <NamedIndividual IRI="#dlogin"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasLinkages"/>
         <NamedIndividual IRI="#driverquery"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasLinkages"/>
         <NamedIndividual IRI="#driverupdate"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasLinkages"/>
         <NamedIndividual IRI="#find"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasLinkages"/>
         <NamedIndividual IRI="#list"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasLinkages"/>
         <NamedIndividual IRI="#locate"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLinkages"/>
+        <NamedIndividual IRI="#logassign"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLinkages"/>
+        <NamedIndividual IRI="#logdriver"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasLinkages"/>
         <NamedIndividual IRI="#notify"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasLinkages"/>
         <NamedIndividual IRI="#pay"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasLinkages"/>
         <NamedIndividual IRI="#plogin"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasLinkages"/>
         <NamedIndividual IRI="#process"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasLinkages"/>
         <NamedIndividual IRI="#record"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasAttachment"/>

@@ -66,25 +66,31 @@ component SignOn {
 component UserDB { 
 	 port find() = queried->find();
 }
-system rideshare { 
+component AssignwireLog { 
+	 port logassign() = logged->logassign();
+}
+component DriverupdatewireCommandLog { 
+	 port logdriver() = logged->logdriver();
+}
+system current { 
 	 declare callwire = CSConnector; 
-	 declare assignwire = PSConnector; 
-	 declare driverquerywire = REConnector; 
-	 declare paywire = WRConnector; 
-	 declare payprocesswire = REConnector; 
+	 declare assignwire = ESConnector; 
+	 declare driverquerywire = QRConnector; 
 	 declare authwire = CSConnector; 
 	 declare userquerywire = REConnector; 
-	 declare driverupdatewire = WRConnector; 
-	 attach PassengerUI.call() = callwire.requester(22);
-	 attach TripMgmt.accept() = callwire.responder() <*> driverquerywire.reader(45) <*> assignwire.publisher(85);
-	 attach DriverUI.notify() = assignwire.subscriber();
-	 attach DriverRecord.driverquery() = driverquerywire.readstorage();
-	 attach DriverRecord.driverupdate() = driverupdatewire.writestorage();
+	 declare driverupdatewire = CRConnector; 
+	 declare paywire = WRConnector; 
+	 declare billwire = REConnector; 
+	 attach PassengerUI.call() = callwire.requester(10);
+	 attach TripMgmt.accept() = callwire.responder() <*> driverquerywire.querier(51) <*> assignwire.eventpublisher(94);
+	 attach DriverUI.notify() = assignwire.eventsubscriber();
+	 attach DriverRecord.driverquery() = driverquerywire.readstore();
+	 attach DriverRecord.driverupdate() = driverupdatewire.readstore();
 	 attach Payment.record() = paywire.writestorage();
-	 attach Payment.list() = payprocesswire.readstorage();
-	 attach SignOn.auth() = authwire.responder() <*> userquerywire.reader(43);
+	 attach Payment.list() = billwire.readstorage();
+	 attach SignOn.auth() = authwire.responder() <*> userquerywire.reader(80);
 	 attach UserDB.find() = userquerywire.readstorage();
-	 execute PassengerUI.call() || TripMgmt.accept() || DriverUI.notify() || DriverRecord.driverquery() || DriverRecord.driverupdate() || Payment.record() || Payment.list() || SignOn.auth() || UserDB.find()
+	 attach AssignwireLog.logassign() = assignwire.eventstore();
+	 attach DriverupdatewireCommandLog.logdriver() = driverupdatewire.commandstore();
+	 execute PassengerUI.call() || TripMgmt.accept() || DriverUI.notify() || DriverRecord.driverquery() || DriverRecord.driverupdate() || Payment.record() || Payment.list() || SignOn.auth() || UserDB.find() || AssignwireLog.logassign() || DriverupdatewireCommandLog.logdriver()
 }
-assert rideshare |= []  (PassengerUI.call.callride -> <> DriverUI.notify.notified);
-assert rideshare |= ! []  (PassengerUI.call.callride -> <> DriverUI.notify.notified);

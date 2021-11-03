@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="ASCII"?>
 <arch:DesignModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:arch="http://www.example.org/arch" name="current">
-  <component name="PassengerUI" type="client">
+  <component name="PassengerUI" type="client,datawriter">
     <port name="call" role="//@connector.0/@role.0" type="request,OutboundPort">
       <events name="callride"/>
     </port>
-    <port name="pay" role="//@connector.6/@role.0" type="request,OutboundPort">
+    <port name="pay" role="//@connector.6/@role.0" type="write,OutboundPort">
       <events name="issuepay"/>
     </port>
     <port name="plogin" role="//@connector.3/@role.0" type="request,OutboundPort">
@@ -16,35 +16,35 @@
       <events name="acknowledged"/>
     </port>
   </component>
-  <component name="DriverUI" type="client,eventconsumer,commandendpoint,listener">
+  <component name="DriverUI" type="client,eventconsumer,commandendpoint,viewdb,listener,datastore">
     <port name="notify" role="//@connector.1/@role.1" type="listen,InboundPort,EventProcessorPort">
       <events name="notified"/>
     </port>
     <port name="dlogin" role="//@connector.3/@role.0" type="request,OutboundPort">
       <events name="login"/>
     </port>
-    <port name="locate" role="//@connector.5/@role.0" type="issue,OutboundPort,EventProcessorPort">
+    <port name="locate" role="//@connector.5/@role.0" type="update,OutboundPort,EventProcessorPort">
       <events name="located"/>
     </port>
   </component>
-  <component name="DriverRecord" type="viewdb,datastore">
-    <port name="driverquery" role="//@connector.2/@role.1" type="update,query,InboundPort,EventProcessorPort">
+  <component name="DriverRecord" type="commandendpoint,viewdb,datastore">
+    <port name="driverquery" role="//@connector.2/@role.1" type="issue,query,InboundPort,EventProcessorPort">
       <events name="quried"/>
     </port>
-    <port name="driverupdate" role="//@connector.5/@role.1" type="update,query,InboundPort,EventProcessorPort">
+    <port name="driverupdate" role="//@connector.5/@role.1" type="issue,query,InboundPort,EventProcessorPort">
       <events name="updated"/>
     </port>
   </component>
-  <component name="Payment" type="server,reverseoracle">
-    <port name="record" role="//@connector.6/@role.1" type="TamperingProofPort">
+  <component name="Payment" type="repository,RuleSecureWriting,RuleSecureReading,datastore">
+    <port name="record" role="//@connector.6/@role.1" type="store,InboundPort,TamperingProofPort">
       <events name="payrecorded"/>
     </port>
-    <port name="list" role="//@connector.7/@role.1" type="response,blockquery,OutboundPort,InboundPort,TamperingProofPort">
+    <port name="list" role="//@connector.7/@role.1" type="access,InboundPort,TamperingProofPort">
       <events name="listed"/>
     </port>
   </component>
-  <component name="BillingGateway" type="client">
-    <port name="process" role="//@connector.7/@role.0" type="request,OutboundPort">
+  <component name="BillingGateway" type="datareader,readendpoint">
+    <port name="process" role="//@connector.7/@role.0" type="read,OutboundPort">
       <events name="processed"/>
     </port>
   </component>
@@ -95,12 +95,12 @@
     <role name="commandstore" roletype="//@archstyle.3/@connectortype.0/@roletype.2" type="in" connector="//@connector.5"/>
   </connector>
   <connector name="paywire" type="WRConnector" connectortype="//@archstyle.4/@connectortype.0">
-    <role name="writer" roletype="//@archstyle.4/@connectortype.0/@roletype.0" type="writer" connector="//@connector.6"/>
-    <role name="writestorage" roletype="//@archstyle.4/@connectortype.0/@roletype.1" type="writestorage" connector="//@connector.6"/>
+    <role name="writer" roletype="//@archstyle.4/@connectortype.0/@roletype.0" type="out" connector="//@connector.6"/>
+    <role name="writestorage" roletype="//@archstyle.4/@connectortype.0/@roletype.1" type="in" connector="//@connector.6"/>
   </connector>
   <connector name="billwire" type="REConnector" connectortype="//@archstyle.5/@connectortype.0">
-    <role name="reader" roletype="//@archstyle.5/@connectortype.0/@roletype.0" type="reader" connector="//@connector.7"/>
-    <role name="readstorage" roletype="//@archstyle.5/@connectortype.0/@roletype.1" type="readstorage" connector="//@connector.7"/>
+    <role name="reader" roletype="//@archstyle.5/@connectortype.0/@roletype.0" type="out" connector="//@connector.7"/>
+    <role name="readstorage" roletype="//@archstyle.5/@connectortype.0/@roletype.1" type="in" connector="//@connector.7"/>
   </connector>
   <archstyle name="client-server">
     <connectortype name="CSConnector">
@@ -309,7 +309,7 @@
       <porttype name="orafeed"/>
     </componenttype>
   </archstyle>
-  <verifyProperty xsi:type="arch:BehaviourProperty" name="prop1" model="/" visitedStates="197" verifyTime="0.085503" testport="//@component.0/@port.0" traceExample="init -> PassengerUI_call_callride -> PassengerUI_callwire_requester_process -> callwire_req!24 -> callwire_req?24 -> TripMgmt_callwire_responder_invoke -> TripMgmt_accept_acknowledged -> TripMgmt_driverquerywire_querier_process -> driverquerywire_stmt!24 -> driverquerywire_stmt?24 -> DriverRecord_driverquery_quried -> DriverRecord_driverquerywire_readstore_process -> driverquerywire_res!24 -> driverquerywire_res?24 -> TripMgmt_driverquerywire_querier_Skip -> TripMgmt_assignwire_eventpublisher_process -> assignwire_pevt!24 -> assignwire_pevt?24 -> AssignwireLog_logassign_logged -> AssignwireLog_assignwire_eventstore_process -> assignwire_sevt!24 -> AssignwireLog_assignwire_eventstore_persist -> assignwire_sevt?24 -> assignwire_bevt!24 -> assignwire_bevt?24 -> DriverUI_notify_notified -> DriverUI_assignwire_eventsubscriber_process -> TripMgmt_assignwire_eventpublisher_broadcast -> TripMgmt_assignwire_eventpublisher_Skip -> TripMgmt_callwire_responder_process -> callwire_res!24 -> callwire_res?24" exprText="[]  (PassengerUI.call.callride -> &lt;> DriverUI.notify.notified)">
+  <verifyProperty xsi:type="arch:BehaviourProperty" name="prop1" model="/" visitedStates="197" verifyTime="0.0527315" testport="//@component.0/@port.0" traceExample="init -> PassengerUI_call_callride -> PassengerUI_callwire_requester_process -> callwire_req!10 -> callwire_req?10 -> TripMgmt_callwire_responder_invoke -> TripMgmt_accept_acknowledged -> TripMgmt_driverquerywire_querier_process -> driverquerywire_stmt!10 -> driverquerywire_stmt?10 -> DriverRecord_driverquery_quried -> DriverRecord_driverquerywire_readstore_process -> driverquerywire_res!10 -> driverquerywire_res?10 -> TripMgmt_driverquerywire_querier_Skip -> TripMgmt_assignwire_eventpublisher_process -> assignwire_pevt!10 -> assignwire_pevt?10 -> AssignwireLog_logassign_logged -> AssignwireLog_assignwire_eventstore_process -> assignwire_sevt!10 -> AssignwireLog_assignwire_eventstore_persist -> assignwire_sevt?10 -> assignwire_bevt!10 -> assignwire_bevt?10 -> DriverUI_notify_notified -> DriverUI_assignwire_eventsubscriber_process -> TripMgmt_assignwire_eventpublisher_broadcast -> TripMgmt_assignwire_eventpublisher_Skip -> TripMgmt_callwire_responder_process -> callwire_res!10 -> callwire_res?10" exprText="[]  (PassengerUI.call.callride -> &lt;> DriverUI.notify.notified)">
     <ltlexpr xsi:type="arch:LTLNestedExpr" operator="ALWAYS" property="//@verifyProperty.0">
       <expr xsi:type="arch:LTLRegularExpr" event="//@component.0/@port.0/@events.0" nextExpr="//@verifyProperty.0/@ltlexpr.0/@expr.1"/>
       <expr xsi:type="arch:LTLRegularExpr" event="//@component.2/@port.0/@events.0" operator="EVENTUALLY"/>
