@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arch:RefactorSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:arch="http://www.example.org/arch">
+  <source href="current.arch#/"/>
+  <parts name="payment" replaceStrcuture="true" next="//@parts.1">
+    <reference href="payment.arch#/"/>
+    <functions name="func1" exprText="[]  (OrdersService.postorder.save-> &lt;> PaymentGateway.commit.checked)"/>
+  </parts>
+  <parts name="sso" next="//@parts.2">
+    <reference href="sso.arch#/"/>
+    <functions name="func1" exprText="[]  (ShopFrontend.slogin.submit -> &lt;> SSOServer.auth.tokenissued)"/>
+  </parts>
+  <parts name="report">
+    <reference href="current.arch#/"/>
+    <functions name="func1" exprText="[]  (BIReport.summarise.generated -> &lt;> OrdersService.get.ack)"/>
+  </parts>
+</arch:RefactorSet>

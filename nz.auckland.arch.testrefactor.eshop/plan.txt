@@ -1,0 +1,4 @@
+{"steps":[
+{"id":0,"name":"setup-component","parameters":[{"name":"component","value":"paymentgatewayref"}]},
+{"id":1,"name":"establish-link","parameters":[{"name":"component","value":"paymentgatewayref"},{"name":"port","value":"commitref"},{"name":"connector","value":"paywire"},{"name":"role","value":"responder-paywire"}]},
+{"id":2,"name":"establish-link","parameters":[{"name":"component","value":"ordersservice"},{"name":"port","value":"payref"},{"name":"connector","value":"paywire"},{"name":"role","value":"requester-paywire"}]}]}
