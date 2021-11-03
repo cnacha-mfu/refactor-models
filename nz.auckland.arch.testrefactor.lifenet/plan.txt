@@ -1,0 +1,8 @@
+[]  (LifeFriend.search.query -> <> EmCenter.emaccess.emaccessed)
+[]  (Lifegrid.rnotify.acknowlege -> <> Patient.ptaccess.ptaccessed)
+
+{"steps":[
+{"id":0,"name":"setup-connector","parameters":[{"name":"connector","value":"gridwireref"}]},
+{"id":1,"name":"establish-link","parameters":[{"name":"component","value":"requestdispatcher"},{"name":"port","value":"accept"},{"name":"connector","value":"gridwireref"},{"name":"role","value":"reader-gridwireref"}]},
+{"id":2,"name":"setup-component","parameters":[{"name":"component","value":"lifegridref"}]},
+{"id":3,"name":"establish-link","parameters":[{"name":"component","value":"lifegridref"},{"name":"port","value":"lookupref"},{"name":"connector","value":"gridwireref"},{"name":"role","value":"readstorage-gridwireref"}]}]}

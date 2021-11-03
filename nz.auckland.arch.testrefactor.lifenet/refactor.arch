@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arch:RefactorSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:arch="http://www.example.org/arch">
+  <source href="current.arch#/"/>
+  <parts name="payment" next="//@parts.2">
+    <reference href="payment.arch#/"/>
+    <functions name="func1" exprText="[]  (LifeFriend.pay.preprocess -> &lt;> PaymentGateway.commit.checked)"/>
+  </parts>
+  <parts name="lifefriend" next="//@parts.0">
+    <reference href="current.arch#/"/>
+    <functions name="func1" exprText="[]  (LifeFriend.cnotify.acknowlege -> &lt;> Patient.ptaccess.ptaccessed);"/>
+  </parts>
+  <parts name="lifegrid" replaceStrcuture="true">
+    <reference href="lifegrid.arch#/"/>
+    <functions name="func1" exprText="[]  (RequestDispatcher.accept.dispatched -> &lt;> LifeGrid.lookup.returned)"/>
+  </parts>
+</arch:RefactorSet>
