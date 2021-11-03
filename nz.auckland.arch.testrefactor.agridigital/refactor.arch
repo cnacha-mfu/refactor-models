@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arch:RefactorSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:arch="http://www.example.org/arch">
+  <source href="current.arch#/"/>
+  <parts name="mobile" next="//@parts.1">
+    <reference href="current.arch#/"/>
+    <functions name="func1" exprText="[]  (ProvenanceMobileApp.prvconsume.provenancerequest -> &lt;> ProvenanceInt.prvpub.prvevntpublish)"/>
+  </parts>
+  <parts name="market" next="//@parts.2">
+    <reference href="market.arch#/"/>
+    <functions name="func1" exprText="[]  (ADWebApp.advertise.submitted -> &lt;> Marketplace.post.committed)"/>
+  </parts>
+  <parts name="monitor" replaceStrcuture="true">
+    <reference href="monitor.arch#/"/>
+    <functions name="func1" exprText="[]  (Commodity.liststate.listed -> &lt;> Monitor.display.rendered)"/>
+  </parts>
+</arch:RefactorSet>
