@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arch:RefactorSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:arch="http://www.example.org/arch">
+  <source href="current.arch#/"/>
+  <parts name="payment" replaceStrcuture="true" next="//@parts.1">
+    <reference href="payment.arch#/"/>
+    <functions name="func1" exprText="[]  (PassengerUI.pay.issuepay -> &lt;> PaymentGateway.commit.checked)"/>
+  </parts>
+  <parts name="signon" next="//@parts.2">
+    <reference href="sso.arch#/"/>
+    <functions name="func2" traceExample="" exprText="[]  (PassengerUI.ssologin.login ->  &lt;> SSOServer.issue.tokenissued)"/>
+  </parts>
+  <parts name="deliverer">
+    <reference href="current.arch#/"/>
+    <functions name="func3" exprText="[]  (EatUI.call.callride -> &lt;> DriverUI.notify.notified)"/>
+  </parts>
+</arch:RefactorSet>
